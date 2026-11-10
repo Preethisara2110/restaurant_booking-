@@ -17,7 +17,7 @@ export default function MyBookings() {
             <div className="r-row">
               <div className="r-img">🍴</div>
               <div className="r-info">
-                <h3>{b.name}</h3>
+                <h3>{b.name || b.restaurantName || b["Restaurant Name"]}</h3>
                 <p className="muted">{b.address}</p>
                 <p className="muted">{b.city}, {b.state}</p>
                 <span className="rating">★ {b.rating}</span>
